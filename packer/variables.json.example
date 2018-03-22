@@ -1,0 +1,5 @@
+{
+    "project_id": "qwerty-123456",
+    "source_image_family": "windows-2016-core",
+    "machine_type": "f1-micro"
+}
