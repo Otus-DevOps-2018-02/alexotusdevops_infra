@@ -1,7 +1,7 @@
 # alexotusdevops_infra
 alexotusdevops Infra repository
 
-/////////////////////////////////////////////
+## Homework 4
 
 Connect to someinternalhost in one-line command:
     ssh -i ~/.ssh/appuser -o "ProxyCommand ssh -W %h:%p appuser@35.204.199.104" appuser@10.164.0.3
@@ -40,3 +40,22 @@ Result:
 
 bastion_IP = 35.204.199.104
 someinternalhost_IP = 10.164.0.3
+
+
+## Homework 5
+
+#### Create instance
+gcloud compute instances create reddit-app\
+  --boot-disk-size=10GB \
+  --image-family ubuntu-1604-lts \
+  --image-project=ubuntu-os-cloud \
+  --machine-type=g1-small \
+  --tags puma-server \
+  --restart-on-failure \
+  --metadata-from-file startup-script=/opt/Homework03.1/alexotusdevops_infra/startup_script.sh
+
+#### Create firewall
+gcloud compute --project=infra-198111 firewall-rules create default-puma-server --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:9292 --source-ranges=0.0.0.0/0 --target-tags=puma-server
+
+testapp_IP = 35.204.199.104
+testapp_port = 9292
