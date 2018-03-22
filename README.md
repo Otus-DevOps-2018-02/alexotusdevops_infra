@@ -59,3 +59,9 @@ gcloud compute --project=infra-198111 firewall-rules create default-puma-server 
 
 testapp_IP = 35.204.199.104
 testapp_port = 9292
+
+## Homework 6
+
+Configuration files ubuntu1604.json & immutable.json created
+Create image for manual deploy virtual machine from google cloud console
+Create script for silent deploy virtual machine
