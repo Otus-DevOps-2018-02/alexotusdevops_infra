@@ -65,3 +65,18 @@ testapp_port = 9292
 Configuration files ubuntu1604.json & immutable.json created
 Create image for manual deploy virtual machine from google cloud console
 Create script for silent deploy virtual machine
+
+## Homework 7
+
+#### Main task
+
+Add terraform directory
+Create config files for terraform
+Apply terraform config to deploy app
+
+#### Task *
+
+Add ssh key for several users
+
+Problem: do not use web console to manage ssh keys when terraform exist
+
