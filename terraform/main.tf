@@ -5,7 +5,9 @@ provider "google" {
 }
 
 resource "google_compute_instance" "app" {
-  name         = "reddit-app"
+  count = 2
+
+  name         = "reddit-app${count.index}"
   machine_type = "g1-small"
   zone         = "${var.zone}"
 
@@ -16,7 +18,7 @@ resource "google_compute_instance" "app" {
   }
 
   metadata {
-    ssh-keys = "appuser:${file(var.public_key_path)}appuser1:${file(var.public_key_path)}"
+    ssh-keys = "appuser:${file(var.public_key_path)}"
   }
 
   tags = ["reddit-app"]
