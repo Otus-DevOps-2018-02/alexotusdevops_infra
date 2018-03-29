@@ -1,6 +1,6 @@
 {
   "variables": {
-    "proj_id": null,
+    "proj_id": "infra-198111",
     "source_image_family": null,
     "machine_type": null
   },
