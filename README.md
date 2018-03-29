@@ -80,3 +80,8 @@ Add ssh key for several users
 
 Problem: do not use web console to manage ssh keys when terraform exist
 
+#### Task **
+
+Edit terraform config to deploy several apps
+Create terraform config to deploy load balancer
+
