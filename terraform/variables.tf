@@ -24,6 +24,12 @@ variable disk_image {
   description = "Disk image"
 }
 
-variable count {
-  description = "Instance count"
+variable app_disk_image {
+  description = "Disk image for reddit app"
+  default     = "reddit-base-app"
+}
+
+variable db_disk_image {
+  description = "Disk image for reddit db"
+  default     = "reddit-base-db"
 }
