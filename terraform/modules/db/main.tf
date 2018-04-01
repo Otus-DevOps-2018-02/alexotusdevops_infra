@@ -1,6 +1,6 @@
 resource "google_compute_instance" "db" {
   name         = "reddit-db"
-  machine_type = "g1-small"
+  machine_type = "${var.machine_type}"
   zone         = "${var.zone}"
   tags         = ["reddit-db"]
 
@@ -19,4 +19,3 @@ resource "google_compute_instance" "db" {
     ssh-keys = "appuser:${file(var.public_key_path)}"
   }
 }
-

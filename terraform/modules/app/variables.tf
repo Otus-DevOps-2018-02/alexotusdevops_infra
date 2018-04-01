@@ -12,3 +12,7 @@ variable app_disk_image {
   default     = "reddit-base-app"
 }
 
+variable machine_type {
+  description = "GC machine type"
+  default     = "g1-small"
+}

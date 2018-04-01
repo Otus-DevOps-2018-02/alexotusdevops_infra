@@ -12,3 +12,7 @@ variable db_disk_image {
   default     = "reddit-base-db"
 }
 
+variable machine_type {
+  description = "GC Machine type"
+  default     = "g1-small"
+}

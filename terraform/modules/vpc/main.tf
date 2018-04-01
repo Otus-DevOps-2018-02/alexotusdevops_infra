@@ -35,4 +35,3 @@ resource "google_compute_firewall" "firewall_mongo" {
   target_tags = ["reddit-db"]
   source_tags = ["reddit-app"]
 }
-
