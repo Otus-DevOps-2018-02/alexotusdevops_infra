@@ -20,7 +20,3 @@ variable machine_type {
   description = "GC machine type"
   default     = "g1-small"
 }
-
-variable db_internal_ip {
-  description = "Database IP"
-}
