@@ -25,4 +25,3 @@ variable db_internal_ip {
   description = "Database IP"
   default     = "0.0.0.0"
 }
-

@@ -29,7 +29,6 @@ resource "google_compute_instance" "app" {
     ssh-keys = "appuser:${file(var.public_key_path)}"
   }
 
-
   provisioner "file" {
     source      = "${path.module}/files/puma.service"
     destination = "/tmp/puma.service"
