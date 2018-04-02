@@ -1,7 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket  = "storage-bucket-198111-1"
-    prefix  = "terraform/state"
+    bucket = "storage-bucket-198111-1"
+    prefix = "terraform/state"
   }
 }
-

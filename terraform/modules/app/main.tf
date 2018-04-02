@@ -18,8 +18,25 @@ resource "google_compute_instance" "app" {
     }
   }
 
+  connection {
+    type        = "ssh"
+    user        = "appuser"
+    agent       = false
+    private_key = "${file(var.private_key_path)}"
+  }
+
   metadata {
     ssh-keys = "appuser:${file(var.public_key_path)}"
+  }
+
+
+  provisioner "file" {
+    source      = "${path.module}/files/puma.service"
+    destination = "/tmp/puma.service"
+  }
+
+  provisioner "remote-exec" {
+    script = "${path.module}/files/deploy.sh"
   }
 }
 
