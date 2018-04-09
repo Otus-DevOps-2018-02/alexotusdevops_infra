@@ -10,8 +10,7 @@ module "app" {
   private_key_path = "${var.private_key_path}"
   zone             = "${var.zone}"
   app_disk_image   = "${var.app_disk_image}"
-
-  #  db_internal_ip   = "${module.db.db_internal_ip}"
+  reddit_db_addr   = "${module.db.db_internal_ip}"
 }
 
 module "db" {

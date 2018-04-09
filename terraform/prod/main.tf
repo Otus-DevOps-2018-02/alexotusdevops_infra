@@ -11,8 +11,7 @@ module "app" {
   zone             = "${var.zone}"
   app_disk_image   = "${var.app_disk_image}"
   machine_type     = "${var.machine_type}"
-
-  #  db_internal_ip   = "${var.db_internal_ip}"
+  reddit_db_addr   = "${module.db.db_internal_ip}"
 }
 
 module "db" {

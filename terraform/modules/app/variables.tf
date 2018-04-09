@@ -20,3 +20,8 @@ variable machine_type {
   description = "GC machine type"
   default     = "g1-small"
 }
+
+variable reddit_db_addr {
+  description = "Internal DB IP"
+}
+

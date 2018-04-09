@@ -1,3 +1,11 @@
+data "template_file" "reddit_app" {
+    template = "${file("${path.module}/files/puma.service.tpl")}"
+
+    vars {
+	reddit_db_addr = "${var.reddit_db_addr}"
+    }
+}
+
 resource "google_compute_instance" "app" {
   name         = "reddit-app"
   machine_type = "${var.machine_type}"
@@ -30,7 +38,7 @@ resource "google_compute_instance" "app" {
   }
 
   provisioner "file" {
-    source      = "${path.module}/files/puma.service"
+    content     = "${data.template_file.reddit_app.rendered}"
     destination = "/tmp/puma.service"
   }
 

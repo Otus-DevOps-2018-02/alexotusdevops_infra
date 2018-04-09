@@ -21,8 +21,3 @@ variable machine_type {
   default     = "g1-small"
 }
 
-#variable db_internal_ip {
-#  description = "Database IP"
-#  default     = "0.0.0.0"
-#}
-
