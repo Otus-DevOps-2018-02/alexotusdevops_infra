@@ -33,8 +33,3 @@ variable db_disk_image {
   description = "Disk image for reddit db"
   default     = "reddit-base-db"
 }
-
-variable machine_type {
-  description = "GC machine type"
-  default     = "g1-small"
-}

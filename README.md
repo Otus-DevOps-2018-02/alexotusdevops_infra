@@ -11,9 +11,12 @@ alexotusdevops Infra repository
  * [IP list](#hw53) 
 ##### [Homework 6](#hw6)  
 ##### [Homework 7](#hw7)  
- * [Main task](#hw71)
- * [Task \*](#hw72)
- * [Task \**](#hw73)
+ * [Main task](#hw71)  
+ * [Task \*](#hw72)  
+ * [Task \**](#hw73)  
+##### [Homework 8](#hw8)  
+ * [Main task](#hw81)  
+ * [Task \*](#hw82)  
 
 <a name="hw4"></a>
 ## Homework 4
@@ -103,4 +106,19 @@ testapp_port = 9292
 
  - Edit terraform config to deploy several apps  
  - Create terraform config to deploy load balancer  
+
+<a name="hw8"></a>
+## Homework 8
+<a name="hw81"></a>
+##### Main task
+ - Import Google Infrastructure to terraform
+ - Split project into modules
+ - Add VPC module
+ - Create Stage & Prod env
+ - Create FW rules for external IP
+ - Del old files
+<a name="hw82"></a>
+##### Task *
+ - Storage-bucket created
+ - Setting up remote backend
 
