@@ -17,6 +17,9 @@ alexotusdevops Infra repository
 ##### [Homework 8](#hw8)  
  * [Main task](#hw81)  
  * [Task \*](#hw82)  
+##### [Homework 9](#hw9)  
+ * [Main task](#hw91)  
+ * [Task \*](#hw92)  
 
 <a name="hw4"></a>
 ## Homework 4
@@ -121,4 +124,23 @@ testapp_port = 9292
 ##### Task *
  - Storage-bucket created
  - Setting up remote backend
+
+<a name="hw9"></a>
+## Homework 9
+<a name="hw91"></a>
+##### Main task
+ - Install ansible
+ - Play with ansible
+ - Create simple ansible playbook
+> ansible-playbook clone.yml
+appserver: ok=2 changed=0 unreachable=0 failed=0
+> ansible app -m command -a 'rm -rf ~/reddit'
+> ansible-playbook clone.yml
+appserver: ok=2 changed=1 unreachable=0 failed=0
+
+В первом случае плейбук применился, но ничего не изменил, т.к. директория ~/reddit уже существовала
+
+<a name="hw92"></a>
+##### Task *
+ - Create Inventory.json 
 
