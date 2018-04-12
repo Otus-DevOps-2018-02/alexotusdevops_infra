@@ -133,9 +133,11 @@ testapp_port = 9292
  - Play with ansible
  - Create simple ansible playbook
 > ansible-playbook clone.yml
+
 appserver: ok=2 changed=0 unreachable=0 failed=0
 > ansible app -m command -a 'rm -rf ~/reddit'
 > ansible-playbook clone.yml
+
 appserver: ok=2 changed=1 unreachable=0 failed=0
 
 В первом случае плейбук применился, но ничего не изменил, т.к. директория ~/reddit уже существовала
