@@ -1,0 +1,15 @@
+{
+	"appservers": {
+		"children": ["appserver"]
+	},
+	"dbservers": {
+		"children": ["dbserver"]
+	},
+
+	"appserver": ["35.187.190.170"],
+	"dbserver": ["35.189.232.93"],
+
+	"_meta": {
+		"hostvars": {}
+	}
+}
