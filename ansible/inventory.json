@@ -6,8 +6,8 @@
 		"children": ["dbserver"]
 	},
 
-	"appserver": ["35.187.190.170"],
-	"dbserver": ["35.190.197.169"],
+	"appserver": ["35.233.43.243"],
+	"dbserver": ["35.195.148.59"],
 
 	"_meta": {
 		"hostvars": {}
