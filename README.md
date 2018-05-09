@@ -20,6 +20,8 @@ alexotusdevops Infra repository
 ##### [Homework 9](#hw9)  
  * [Main task](#hw91)  
  * [Task \*](#hw92)  
+##### [Homework 10](#hw10)  
+ * [Main task](#hw101)  
 
 <a name="hw4"></a>
 ## Homework 4
@@ -146,3 +148,12 @@ appserver: ok=2 changed=1 unreachable=0 failed=0
 ##### Task *
  - Create Inventory.json 
 
+<a name="hw101"></a>
+## Homework 10
+##### Main task
+ - Create some playbooks to deploy app:  
+   - One playbook - one script  
+   - One playbook - many scripts  
+   - Many playbooks  
+ - Change shell provosioner to ansible  
+ - Test all changes on Stage Infrastructure  
