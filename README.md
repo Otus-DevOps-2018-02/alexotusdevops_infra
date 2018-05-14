@@ -22,6 +22,8 @@ alexotusdevops Infra repository
  * [Task \*](#hw92)  
 ##### [Homework 10](#hw10)  
  * [Main task](#hw101)  
+##### [Homework 11](#hw11)  
+ * [Main task](#hw111)  
 
 <a name="hw4"></a>
 ## Homework 4
@@ -148,8 +150,9 @@ appserver: ok=2 changed=1 unreachable=0 failed=0
 ##### Task *
  - Create Inventory.json 
 
-<a name="hw101"></a>
+<a name="hw10"></a>
 ## Homework 10
+<a name="hw101"></a>
 ##### Main task
  - Create some playbooks to deploy app:  
    - One playbook - one script  
@@ -157,3 +160,12 @@ appserver: ok=2 changed=1 unreachable=0 failed=0
    - Many playbooks  
  - Change shell provosioner to ansible  
  - Test all changes on Stage Infrastructure  
+
+<a name="hw11"></a>
+## Homework 11
+<a name="hw111"></a>
+##### Main task
+ - Create roles to deploy app & db:  
+ - Test community roles from galaxy  
+ - Configure ansible-vault  
+
