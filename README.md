@@ -24,6 +24,9 @@ alexotusdevops Infra repository
  * [Main task](#hw101)  
 ##### [Homework 11](#hw11)  
  * [Main task](#hw111)  
+##### [Homework 12](#hw12)  
+ * [Main task](#hw121)  
+ * [Task \*](#hw122)  
 
 <a name="hw4"></a>
 ## Homework 4
@@ -168,4 +171,18 @@ appserver: ok=2 changed=1 unreachable=0 failed=0
  - Create roles to deploy app & db:  
  - Test community roles from galaxy  
  - Configure ansible-vault  
+
+<a name="hw12"></a>
+## Homework 12
+<a name="hw121"></a>
+##### Main task
+ - Install Vagrant & Virtualbox   
+ - Install Molecule  
+ - Modify roles app & db  
+ - Use roles in ansible playbooks  
+ - Add test to DB role to verify listen port 27017  
+
+<a name="hw122"></a>
+##### Task * 1/2
+ - Manage nginx from Vagrant
 
